@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".MainActivity"
+    android:id="@+id/pozadina"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Tabela"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:id="@+id/tabela"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ime:"
+            android:textColor="@color/text"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Datum:"
+            android:textColor="@color/text"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Broj Poena:"
+            android:textColor="@color/text"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brisanje"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_back_green20"
+            android:text="Obrisi sve"
+            android:textColor="@color/text" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pokreniNoviKviz"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_back_green20"
+            android:text="Pokreni novi kviz"
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
